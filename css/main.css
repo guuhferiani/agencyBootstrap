@@ -509,7 +509,7 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
-  scroll-margin-top: 40px;
+  scroll-margin-top: 50px;
 }
 
 @media (max-width: 1199px) {
@@ -683,9 +683,28 @@ section,
   }
 }
 
+/* ------------------
+# STATS 
+------------------------- */
+.stats .stats-item {
+  padding: 30px;
+  width: 100%;
+}
 
+.stats .stats-item i {
+  color: var(--accent-color);
+  display: block;
+  font-size: 44px;
+  float: left;
+}
 
-
+.stats .stats-item .purecounter {
+  color: var(--heading-color);
+  font-size: 48px;
+  display: block;
+  font-weight: 700;
+  margin-left: 60px;
+}
 
 
 
