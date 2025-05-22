@@ -706,6 +706,44 @@ section,
   margin-left: 60px;
 }
 
+/*-------------------------------
+# Services Section
+----------------------------------*/
 
 
+/*-------------------------------
+# Scroll to TOP
+----------------------------------*/
+
+.scroll-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;  
+  z-index: 999999;
+  background-color: #428bca;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-top i {
+  color: #f9f9f9;
+  font-size: 24px;
+}
+
+.scroll-top:hover {
+  background-color: #76acda9f;
+}
+
+.scroll-top i:hover {
+  color: #428bca;
+}
 
