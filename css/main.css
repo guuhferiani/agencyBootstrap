@@ -709,6 +709,87 @@ section,
 /*-------------------------------
 # Services Section
 ----------------------------------*/
+.services .service-item {
+  position: relative;
+  height: 100%;
+  margin-bottom: 30px;
+}
+
+.services .service-item .icon {
+  margin-right: 20px;
+}
+
+.services .service-item .icon i {
+  color: #252525;
+  font-size: 40px;
+  line-height: 0;
+}
+
+/* titulo H4 */
+.services .service-item .title {
+  color: #2c4660;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.services .service-item .description {
+  color: #959595;
+  font-style: 15px;
+  margin-bottom: 10px;  
+}
+
+.services .service-item .readmore {
+  display: flex;
+  align-items: center;
+  color: #94949479;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.services .service-item .readmore i {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #94949479;
+}
+
+.services .service-item:hover .title,
+.services .service-item:hover .readmore,
+.services .service-item:hover .icon i {
+  color: #428bca;
+  transition: all 0.2s ease-in;
+}
+
+.services .service-item:hover .description {
+  color: #102232;
+  transition: all 0.2s ease-in;
+}
+
+/* -----------------------
+# Call to Action Parallax
+--------------------------- */
+
+.call-to-action {
+  padding: 100px 0;
+  position: relative;
+  clip-path: inset(0);
+}
+
+.call-to-action img {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.call-to-action .container {
+  position: relative;
+  z-index: 3;
+}
 
 
 /*-------------------------------
@@ -746,4 +827,3 @@ section,
 .scroll-top i:hover {
   color: #428bca;
 }
-
