@@ -547,7 +547,7 @@ section,
   margin: 10px 0 0 0;
   font-size: 32px;
   font-weight: 700;
-  font-family: var(--font-titulo);
+  font-family: var(--heading-font);
 }
 
 .section-title div .description-title {
@@ -786,11 +786,48 @@ section,
   object-fit: cover;
 }
 
+.call-to-action::before {
+  content: " ";
+  background-color: #393939a4;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
 .call-to-action .container {
   position: relative;
   z-index: 3;
 }
 
+.call-to-action h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 2px 0px 5px #060606;
+}
+
+.call-to-action p {
+  font-size: 18px;
+  margin-top: 45px;
+  font-weight: 400;
+}
+
+.call-to-action .cta-btn {
+  border: 2px solid #e3e0e0;
+  padding: 12px 40px;
+  color: #e3e0e0;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 5px;
+  transition: all .2s ease-in;
+  letter-spacing: 1px;
+  font-family: var(--heading-font);
+  display: inline-block;
+}
+
+.call-to-action .cta-btn:hover {
+  background: #075e54;
+  border: 2px solid #075e54;
+}
 
 /*-------------------------------
 # Scroll to TOP
@@ -808,6 +845,7 @@ section,
   transition: all 0.4s;
   opacity: 0;
   visibility: hidden;
+  box-shadow: -3px 1px 5px rgba(35, 35, 35, 0.604);
 }
 
 .scroll-top.active {
