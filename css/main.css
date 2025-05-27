@@ -859,8 +859,46 @@ section,
   transition: all .3s ease-in-out;
 } 
 
+.portfolio .portfolio-content {
+  position: relative;
+  overflow: hidden;
+}
 
+.portfolio .portfolio-content img {
+    transition: all .3s ease-in-out;
+}
 
+/* Estrutura dos Icones */
+.portfolio .portfolio-content .portfolio-info { 
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  padding: 15px;
+  transition: all .3s ease-in-out;
+  /* opacity: 0; */  /* Voltar */
+  background: #22222286;
+}
+
+.portfolio .portfolio-content:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio .portfolio-content .portfolio-info .preview-link,
+.portfolio .portfolio-content .portfolio-info .details-link {
+  position: absolute;
+  color: #fff;
+  font-size: 26px;
+  transition: 0.3s;
+  left: calc(50% - 40px);
+  top: calc(50% - 14px);
+  line-height: 1.2;
+}
+
+.portfolio .portfolio-content .portfolio-info .details-link {
+  left: 50%;
+  font-size: 34px;
+  line-height: 0;
+}
 
 
 
