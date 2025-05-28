@@ -875,7 +875,7 @@ section,
   z-index: 3;
   padding: 15px;
   transition: all .3s ease-in-out;
-  /* opacity: 0; */  /* Voltar */
+  opacity: 0; 
   background: #22222286;
 }
 
@@ -898,6 +898,10 @@ section,
   left: 50%;
   font-size: 34px;
   line-height: 0;
+}
+
+.portfolio .portfolio-content:hover .portfolio-info  {
+  opacity: 1;
 }
 
 
