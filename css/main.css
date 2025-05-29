@@ -993,7 +993,6 @@ section,
 /*-------------------------------
 # Equipe // TEAM
 ----------------------------------*/
-
 .team .member {
   position: relative;
   overflow: hidden;
@@ -1006,7 +1005,64 @@ section,
   transition: all 0.2s ease-in;
 }
 
+.team .member .member-info-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transition: bottom 0.4s;
+}
 
+.team .member .member-info-content h3 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 22px;
+}
+
+.team .member .member-info-content span {
+  font-style: italic;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  right: 0;
+  height: 48px;
+  transition: bottom ease-in-out 0.4s;
+}
+
+.team .member .social a {
+  color: #ffffff96;
+  display: inline-block;
+  margin: 0 10px;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.team .member .social a:hover {
+  color: #fff;
+}
+
+.team .member:hover .member-info {
+  opacity: 1;
+  transition: 0.4s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0) 100%);
+}
+ 
+.team .member:hover .member-info-content {
+  bottom: 60px;
+  transition: bottom 0.4s;
+}
+
+.team .member:hover .social {
+  bottom: 0;
+  transition: bottom ease-in-out 0.4s;
+}
 
 
 /*-------------------------------
