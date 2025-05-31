@@ -1064,6 +1064,38 @@ section,
   transition: bottom ease-in-out 0.4s;
 }
 
+/*-------------------------------
+# Contato
+----------------------------------*/
+.contact .info-item {
+  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  padding: 30px;
+}
+
+.contact .info-item i {
+  color: #1777d8;
+  font-size: 38px;
+  line-height: 0;
+}
+
+.contact .info-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0;
+}
+
+
+
+
+
+
 
 /*-------------------------------
 # Scroll to TOP
