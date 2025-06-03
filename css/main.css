@@ -1091,9 +1091,35 @@ section,
   margin: 0;
 }
 
+.contact .email-form {
+  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  padding: 30px;
+  height: 100%;
+}
 
+.contact .email-form input[type=text],
+.contact .email-form input[type=email],
+.contact .email-form textarea {
+  box-shadow: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 0;
+  background: #ffffff93;
+  color: #394047;
+  border-color: #39404724;
+}
 
+.contact .email-form input[type=text]:focus,
+.contact .email-form input[type=email]:focus,
+.contact .email-form textarea:focus {
+  border-color: #1777d886;
+}
 
+.contact .email-form input[type=text]::placeholder,
+.contact .email-form input[type=email]::placeholder,
+.contact .email-form textarea::placeholder {
+  color: #c9c9c9a8;
+}
 
 
 
@@ -1133,3 +1159,4 @@ section,
 .scroll-top i:hover {
   color: #428bca;
 }
+
